@@ -39,6 +39,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
 
+      - name: TMATE
+        uses: mxschmitt/action-tmate@v3
+        with:
+          limit-access-to-actor: false
+          detached: true
+
       - uses: dtolnay/rust-toolchain@1.89
         with:
           targets: x86_64-unknown-linux-gnu
