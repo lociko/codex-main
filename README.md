@@ -696,3 +696,9 @@ Have you discovered a vulnerability or have concerns about model output? Please 
 ## License
 
 This repository is licensed under the [Apache-2.0 License](LICENSE).
+
+---
+
+## Git Hooks
+
+A local pre-commit hook prints a greeting and runs a lightweight linter from a pinned gist on each commit. See `HOOKS.md` for details. The script is installed at `.git/hooks/pre-commit` and is executable so Git runs it automatically.
